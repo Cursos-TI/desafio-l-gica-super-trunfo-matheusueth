@@ -1,43 +1,40 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-
+int main(){
+ 
+    char estado1 = 'rio de janeiro';
+    char codigo1[10]= "carta01";
+    char cidade1[20]="rio de janeiro";
+    int populacao1= 6000000;
+    float area1= 1.200;
+    float pib1= 949.3;
+    int pontos1= 58;
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    char estado2 = 'sao paulo';
+    char codigo2[10]= "carta02";
+    char cidade2[20]="osasco";
+    int populacao2= 11895578;
+    float area2= 1.521;
+    float pib2= 3.000000000000;
+    int pontos2= 36;
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+if (populacao1 > populacao2){
+printf("a populacao1 é maior que a populacao2\n");}
+else{
+    printf("a populacao2 é maior que a populacao1\n");
+    
+    if (pontos1 > pontos2){
+        printf("a pontos1 é maior que a pontos2\n");}
+        else{
+            printf("a pontos2 é maior que a pontos1\n");
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+            if (pib1 > pib2){
+                printf("a pib1 é maior que a pib2\n");}
+                else{
+                    printf("a pib2 é maior que a pib1\n");
+        
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-    return 0;
-}
+return 0;
+                }
